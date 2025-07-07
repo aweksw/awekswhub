@@ -140,7 +140,3 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 end
 end)
-		
-Section:NewButton("gear shop", "купить все геры в гер шопе", function()
-
-end)
