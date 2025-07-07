@@ -142,42 +142,5 @@ end
 end)
 		
 Section:NewButton("gear shop", "купить все геры в гер шопе", function()
-while wait(0.3) do
-local args = {
- "Watering Can"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Trowel"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Recall Wrench"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Basic Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Advanced Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Godly Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Magnifying Glass"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Tanning Mirror"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Master Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-end
+
 end)
