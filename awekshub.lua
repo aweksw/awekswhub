@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
-local Window = Library.CreateLib("aweks hub V1.1", "RJTheme6")
+local Window = Library.CreateLib("aweks hub v1.2", "RJTheme6")
 
 local Tab = Window:NewTab("Multi")
 
@@ -20,8 +20,14 @@ Section:NewToggle("low gravity", "низкая гравитация", function(s
     end
 end)
 
-Section:NewTextBox("SpeedHack", "изменяет скорость ходьбы", function(txt)
+Section:NewTextBox("SpeedHack v1", " не обходит ач в некоторых режимах", function(txt)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+Section:NewTextBox("SpeedHack v2", "обходит ач в некоторых режимах", function(txt)
+while wait() do
  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end
 end)
 
 Section:NewTextBox("JumpHack", "Изменяет силу прыжка", function(txt)
@@ -29,6 +35,10 @@ Section:NewTextBox("JumpHack", "Изменяет силу прыжка", functio
 end)
 
 local Section = Tab:NewSection("misc")
+
+Section:NewButton("inf yeld", "инф елд", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 Section:NewButton("ESP", "показывает игроков через стены", function()
 for i, childrik in ipairs(workspace:GetDescendants()) do
@@ -183,10 +193,12 @@ Section:NewButton("gear shop", "купить все геры в гер шопе"
     end
 end)
 
-Section:NewButton("sell all", "продать все", function()
-while wait(7) do
+local g = 1
+Section:NewButton("fruit sell", "продать все фрукты", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame  = workspace.Tutorial_Points.Tutorial_Point_2.CFrame
 wait(0.5)
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("Sell_Inventory"):FireServer()
-end
+
 end)
+
+local Section = Tab:NewSection("BaB")
