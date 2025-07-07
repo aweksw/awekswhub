@@ -10,6 +10,10 @@ Section:NewButton("seed shop", "телепортирует к магазину",
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Tutorial_Points.Tutorial_Point_1.CFrame
 end)
 
+Section:NewButton("gear shop", "телепортирует к gear магазину", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Tutorial_Points.Tutorial_Point_3.CFrame
+end)
+
 local Section = Tab:NewSection("Player")
 
 Section:NewToggle("low gravity", "низкая гравитация", function(state)
