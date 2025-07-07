@@ -10,10 +10,6 @@ Section:NewButton("seed shop", "телепортирует к магазину",
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Tutorial_Points.Tutorial_Point_1.CFrame
 end)
 
-Section:NewButton("gear shop", "телепортирует к gear магазину", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Tutorial_Points.Tutorial_Point_3.CFrame
-end)
-
 local Section = Tab:NewSection("Player")
 
 Section:NewToggle("low gravity", "низкая гравитация", function(state)
@@ -59,129 +55,138 @@ local Section = Tab:NewSection("Shop")
 Section:NewButton("buy shop", "купить все семена", function()
 while wait(0.3) do
 local args = {
-	"Carrot"
+ "Carrot"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Strawberry"
+ "Strawberry"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Orange Tulip"
+ "Orange Tulip"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Blueberry"
+ "Blueberry"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Tomato"
+ "Tomato"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Watermelon"
+ "Watermelon"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Daffodil"
+ "Daffodil"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Pumpkin"
+ "Pumpkin"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Apple"
+ "Apple"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Bamboo"
+ "Bamboo"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Cactus"
+ "Cactus"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Dragon Fruit"
+ "Dragon Fruit"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Mango"
+ "Mango"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Grape"
+ "Grape"
+
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Mushroom"
+ "Mushroom"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Pepper"
+ "Pepper"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Cacao"
+ "Cacao"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Beanstalk"
+ "Beanstalk"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Ember Lily"
+ "Ember Lily"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Sugar Apple"
+ "Sugar Apple"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 local args = {
-	"Burning Bud"
+ "Burning Bud"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
 end
 end)
 
 Section:NewButton("gear shop", "купить все геры в гер шопе", function()
-while wait(0.3) do
-local args = {
- "Watering Can"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Trowel"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Recall Wrench"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Basic Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Advanced Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Godly Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Magnifying Glass"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Tanning Mirror"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
-local args = {
- "Master Sprinkler"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    while wait(0.3) do
+    local args = {
+     "Watering Can"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Trowel"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Recall Wrench"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Basic Sprinkler"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Advanced Sprinkler"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Godly Sprinkler"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Magnifying Glass"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Tanning Mirror"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    local args = {
+     "Master Sprinkler"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuyGearStock"):FireServer(unpack(args))
+    end
+end)
+
+Section:NewButton("sell all", "продать все", function()
+while wait(7) do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame  = workspace.Tutorial_Points.Tutorial_Point_2.CFrame
+wait(0.5)
+game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("Sell_Inventory"):FireServer()
 end
 end)
